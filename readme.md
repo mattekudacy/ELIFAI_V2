@@ -40,7 +40,7 @@ ELIFAI mainly relies on the following dependencies:
 
 ### 2. API Integration
 
-ELIFAI integrates with Clarifai's natural language processing API to understand and respond to user queries effectively.
+ELIFAI integrates with Clarifai's to access the OpenAI models avaialble in the platform.
 
 ### 3. Session Management
 
@@ -61,16 +61,22 @@ git clone
 pip install requirements.txt
 ```
 
-3. Replace environment variables.
+3. Create your <code>secrets.toml</code> file and put the following:
 ```python
+#for text generation
 PAT = 'your-pat-key'
 USER_ID = 'your-user-id'
 APP_ID = 'your-app-id'
 MODEL_ID = 'gpt-4-turbo'
 MODEL_VERSION_ID = 'model-version-id'
+
+#for image generation
+DAPP_ID = st.secrets.DAPP_ID
+DMODEL_ID =  st.secrets.DMODEL_ID
+DMODEL_VERSION_ID = st.secrets.DMODEL_VERSION_ID
 ```
 - To see your PAT key, navigate to Profile -> Security -> Personal Access Token->
-- For the other details, simply find the GPT-4 Model in the "Community" section, and click the "Use Model" button. The first few lines will reveal the USER_ID, APP_ID, MODEL_ID, and MODEL_VERSION_ID.
+- For the other details, simply find the GPT-4 and DALL-E 3 model in the "Community" section, and click the "Use Model" button. The first few lines will reveal the USER_ID, APP_ID, MODEL_ID, and MODEL_VERSION_ID.
 
 4. Run the streamlit app
 ```bash
