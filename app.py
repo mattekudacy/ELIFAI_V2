@@ -43,7 +43,7 @@ def make_clarifai_api_call(user_app_id, model_id, version_id, input_text):
 def display_assistant_response(output, images):
     for i, (text, image_base64) in enumerate(zip(output, images)):
         st.markdown(text)
-        st.image(image_base64, width=300, caption=f"Image {i+1}")
+        st.image(image_base64, width=300)
 
 # Set Streamlit page config
 st.set_page_config(page_title="ELIFAI", page_icon=":robot_face:")
