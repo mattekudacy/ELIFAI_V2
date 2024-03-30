@@ -4,7 +4,7 @@ Welcome to the official documentation for ELIFAI, your intelligent virtual assis
 
 ## Overview
 
-ELIFAI is an interactive and educational project designed to provide users with informative and playful responses to a variety of questions. It was inspired from the ELI5(Explain like I'm 5) subreddit. This project was submitted as a prototype for the <b>lablab: NextGen GPT AI Hackathon</b> This document also serves as a comprehensive guide to help users understand the features, architecture, and usage of ELIFAI.
+ELIFAI is an interactive and educational project designed to provide users with informative and playful responses to a variety of questions. It was inspired from the ELI5(Explain like I'm 5) subreddit. This project was submitted as a prototype for the **lablab: NextGen GPT AI Hackathon** This document also serves as a comprehensive guide to help users understand the features, architecture, and usage of ELIFAI.
 
 ## Features
 
@@ -52,7 +52,7 @@ Before you proceed, make sure you have a Clarifiai account to access the GPT-4 M
 
 1. Clone the reposority
 ```bash
-git clone
+git clone https://github.com/mattekudacy/ELIFAI_V2.git
 ```
 
 2. Install the requirements.
